@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVL Test</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+    <div class = "sidebar-toggle">
+    </div>
+    <aside class="sidebar">
+        <div class = "admin-panel">Admin Panel</div>
+        <a href="#" class = "sidebar-link sidebar-link-active">Manage Categories</a>
+        <a href="#" class = "sidebar-link">Add Company</a>
+        <a href="#" class = "sidebar-link">Add New User</a>
+        <a href="#" class = "sidebar-link">Add New Certificates</a>
+        <a href="#" class = "sidebar-link">University Actions</a>
+        <a href="#" class = "sidebar-link">Add Students</a>
+        <a href="#" class = "sidebar-link">Add MCQ Questions</a>
+        <a href="#" class = "sidebar-link">Recruiters & Jobs</a>
+        <a href="#" class = "sidebar-link">Universities</a>
+        <a href="#" class = "sidebar-link">View All Users</a>
+        <a href="#" class = "sidebar-link">Trial Version</a>
+        <a href="#" class = "sidebar-link">Add Blogs</a>
+        <div class = "user">Anil J</div>
+    </aside>
+
+
+
+    <div class="content">
+
+
+        <div class="top-line">
+            <div class="top-line-text">
+                Assert admin > Manage Categories
+            </div>
+            <Button class = "add-category">
+                Add Category
+            </Button>
+        </div>
+
+        <div class = "categories">
+            <div class="category">Finance</div>
+            <div class="category">Electronics</div>
+            <div class="category">Content Writing</div>
+            <div class="category">Media & Communication</div>
+            <div class="category">Software Services</div>
+            <div class="category">Human Resources</div>
+            <div class="category">Marketing</div>
+            <div class="category">Construction</div>
+            <div class="category">Teaching</div>
+            <div class="category">Business Development</div>
+            <div class="category">Soft Skills</div>
+            <div class="category">Management</div>
+            <div class="category">Entrepreneurship</div>
+            <div class="category">Miscallaneous</div>
+            <div class="category">Custom</div>
+            <div class="category">Creative Design</div>
+            <div class="category">Applications</div>
+            <div class="category">Business Operations</div>
+        </div>
+        
+        <div class="mid-line">
+            <div class="mid-line-text">Certificates Under Category</div>
+            <input class="searchbar" placeholder="Search Certificate">
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-text">Accounts Finance</div>
+                <button class="job-button">Tag a job</button>
+                <button class="employees-button">Employees Enrolled</button>
+                <button class="certificate-button">Assign Certificate</button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-text">Accounts Finance</div>
+                <button class="job-button">Tag a job</button>
+                <button class="employees-button">Employees Enrolled</button>
+                <button class="certificate-button">Assign Certificate</button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-text">Taxation Finance</div>
+                <button class="job-button">Tag a job</button>
+                <button class="employees-button">Employees Enrolled</button>
+                <button class="certificate-button">Assign Certificate</button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-text">Finance</div>
+                <button class="job-button">Tag a job</button>
+                <button class="employees-button">Employees Enrolled</button>
+                <button class="certificate-button">Assign Certificate</button>
+            </div>
+
+
+            <div class="card">
+                <div class="card-text">Financial Market Analyst</div>
+                <button class="job-button">Tag a job</button>
+                <button class="employees-button">Employees Enrolled</button>
+                <button class="certificate-button">Assign Certificate</button>
+            </div>
+        </div>
+
+        <div class="page-numbers">
+            <button class="page-number-button page-active">1</button>
+            <button class="page-number-button">2</button>
+            <button class="page-number-button">3</button>
+            <button class="page-number-button">4</button>
+            <button class="page-number-button">5</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const sidebar_toggle = document.querySelector('.sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    sidebar_toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    })
+</script>
+
+
+
+
+</body>
+</html>
+
